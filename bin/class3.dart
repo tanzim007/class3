@@ -1,8 +1,10 @@
 import 'package:class3/class3.dart' as class3;
 
+import 'models/car.dart';
 import 'models/electric_car.dart';
 import 'models/gas_car.dart';
 import 'models/petrol_car.dart';
+import 'models/vehicle.dart';
 import 'models/vehicle_with_doors.dart';
 
 void main() {
@@ -25,7 +27,9 @@ void main() {
       manufacturer: 'Honda',
       engineCapacity: 1500);
 
-  print(gasCar.drive());
-  print(electricCar.drive());
-  print(petrolCar.drive());
+  List<Vehicle> carList = [gasCar,electricCar,petrolCar];
+
+  for(Vehicle vehicle in carList){
+    print(vehicle.drive());
+  }
 }
