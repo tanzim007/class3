@@ -1,6 +1,6 @@
 import 'vehicle_with_doors.dart';
 
-class Car extends VehicleWithDoor{
+abstract class Car extends VehicleWithDoor{
   Car({
     required int doors,
     required String color,

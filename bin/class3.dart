@@ -2,6 +2,7 @@ import 'package:class3/class3.dart' as class3;
 
 import 'models/electric_car.dart';
 import 'models/gas_car.dart';
+import 'models/petrol_car.dart';
 import 'models/vehicle_with_doors.dart';
 
 void main() {
@@ -17,6 +18,14 @@ void main() {
       color: 'Red',
       manufacturer: 'Tesla',
       engineCapacity: 2000);
+  final PetrolCar petrolCar = PetrolCar(
+      petrolCapacity: 100,
+      doors: 2,
+      color: 'Green',
+      manufacturer: 'Honda',
+      engineCapacity: 1500);
+
   print(gasCar.drive());
   print(electricCar.drive());
+  print(petrolCar.drive());
 }
