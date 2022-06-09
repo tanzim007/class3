@@ -4,5 +4,7 @@ class Vehicle {
   int engineCapacity;
 
   Vehicle({required this.color,required this.manufacturer,required this.engineCapacity});
-  String drive() => 'Driving a vehicle';
+
+  //abstract Method
+  String drive();
 }
