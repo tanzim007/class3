@@ -1,6 +1,7 @@
+import '../features/features.dart';
 import 'car.dart';
-
-class GasCar extends Car{
+//Implements থাকলে Override দরকার!
+class GasCar extends Car implements Fly, Transform {
   int gasCapacity;
 
   GasCar({
@@ -19,4 +20,10 @@ class GasCar extends Car{
 
   @override
   String drive() => 'Driving a Gas Car';
+
+  @override
+  String canFly() => "Gas car can fly";
+
+  @override
+  String canTransform() => "Gas car transform";
 }

@@ -1,6 +1,8 @@
+import '../features/features.dart';
 import 'car.dart';
 
-class ElectricCar extends Car {
+//with থাকলে Override দরকার নাই
+class ElectricCar extends Car with Fly {
   int chargeCapacity;
 
   ElectricCar({
@@ -18,5 +20,8 @@ class ElectricCar extends Car {
   String charge() => "Charging The Electric Car";
 
   @override
-  String drive() => 'Driving a Electric Car';
+  String drive() => 'Driving an Electric Car';
+
+  @override
+  String canFly() => "Electric car can fly";
 }
