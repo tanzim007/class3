@@ -1,4 +1,4 @@
-class Vehicle {
+abstract class Vehicle {
   String color;
   String manufacturer;
   int engineCapacity;
